@@ -1,6 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
+    background-color: slategray;
 }
 
 .container {
@@ -27,7 +28,7 @@ input[type="text"] {
 button {
     padding: 5px 10px;
     background-color:springgreen;
-    color: white;
+    color: black;
     border: none;
     border-radius: 4px;
     cursor: pointer;
@@ -40,10 +41,35 @@ button {
     margin-top: 20px;
 }
 
-.weather-icon {
-    width: 100px;
-    height: 100px;
-    background-size: cover;
+.chart-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 200px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.chart-bar {
+    width: 40px;
+    background-color: silver;
+    margin-right: 5px;
+}
+
+.high-temp-bar {
+    background-color: red;
+}
+
+.low-temp-bar {
+    background-color: blue;
+}
+
+.forecast-bar {
+    background-color: turquoise;
+}
+
+.humidity-bar {
+    background-color: green;
 }
 
 .weather-details {
